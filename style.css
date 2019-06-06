@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Acme");
+
+* {
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #e2e2e2;
+}
+
+.main-form {
+  background: #0845c7;
+  width: 80%;
+  margin: 8rem auto;
+  padding: 2rem;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 5px 6px #414141;
+}
+
+.main-header__title {
+  text-align: center;
+  font-family: "Acme", sans-serif;
+  font-size: 4rem;
+  padding: 1.5rem;
+  color: #ffff00;
+}
+
+.main-header__info {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.8rem;
+  color: white;
+}
+
+.tire-sizes {
+  display: flex;
+  padding-top: 2rem;
+}
+
+.tire {
+  width: 50%;
+  color: white;
+}
+
+.tire-size {
+  width: 50px;
+  background: #ccc;
+  outline: none;
+  border: 1.5px solid #ffff00;
+}
+
+.button {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.btn {
+  font-size: 1.5rem;
+  padding: 0.2rem;
+  background: #ffff00;
+  color: #0845c7;
+  cursor: pointer;
+}
+
+#loading {
+  display: none;
+  text-align: center;
+  padding: 1.5rem;
+}
