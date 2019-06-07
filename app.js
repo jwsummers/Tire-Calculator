@@ -7,16 +7,18 @@ document.getElementById("calcButton").addEventListener("click", function(e) {
 });
 
 function calculateResults() {
-  const width1 = document.getElementById("width-1").value;
-  const ratio1 = document.getElementById("ratio-1").value;
-  const diameter1 = document.getElementById("diameter-1").value;
-  const width2 = document.getElementById("width-2").value;
-  const ratio2 = document.getElementById("ratio-2").value;
-  const diameter2 = document.getElementById("diameter-2").value;
+  const width1 = parseInt(document.getElementById("width-1").value);
+  const ratio1 = parseInt(document.getElementById("ratio-1").value);
+  const diameter1 = parseInt(document.getElementById("diameter-1").value);
+  const width2 = parseInt(document.getElementById("width-2").value);
+  const ratio2 = parseInt(document.getElementById("ratio-2").value);
+  const diameter2 = parseInt(document.getElementById("diameter-2").value);
 
-  const tire1 = parseInt((width1 * ratio1 * 2) / 25.4 / 100 + diameter1);
-  const tire2 = parseInt((width2 * ratio2 * 2) / 25.4 / 100 + diameter2);
+  const tire1 = (width1 * ratio1 * 2) / 25.4 / 100 + diameter1;
+  const tire2 = (width2 * ratio2 * 2) / 25.4 / 100 + diameter2;
   const difference = ((tire1 - tire2) / tire2) * 100;
+
+  console.log(tire1);
 
   document.getElementById("loading").style.display = "none";
   document.getElementById("result").innerHTML = difference.toFixed(2);
