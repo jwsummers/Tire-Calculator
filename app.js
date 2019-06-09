@@ -1,7 +1,8 @@
 document.getElementById("calcButton").addEventListener("click", function(e) {
   document.getElementById("loading").style.display = "block";
+  document.getElementById("results").style.display = "none";
+  document.getElementById("decision").style.display = "none";
   setTimeout(calculateResults, 2000);
-  document.getElementById("results").style.display = "block";
 
   e.preventDefault();
 });
@@ -21,6 +22,8 @@ function calculateResults() {
   console.log(tire1);
 
   document.getElementById("loading").style.display = "none";
+  document.getElementById("results").style.display = "block";
+  document.getElementById("decision").style.display = "block";
   document.getElementById("result").innerHTML = difference.toFixed(2);
 
   if (difference > 2.5) {
