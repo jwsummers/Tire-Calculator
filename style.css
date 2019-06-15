@@ -78,7 +78,18 @@ body {
   padding: 0.2rem;
   background: #ffff00;
   color: #0845c7;
+  border: 1.5px solid black;
+  box-shadow: 3px 3px 5px 6px #414141;
   cursor: pointer;
+}
+
+.btn:hover {
+  background: white;
+}
+
+.btn:active {
+  background: white;
+  box-shadow: none;
 }
 
 .main-footer {
