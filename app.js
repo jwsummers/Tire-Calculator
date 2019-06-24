@@ -17,9 +17,16 @@ function calculateResults() {
 
   const tire1 = (width1 * ratio1 * 2) / 25.4 / 100 + diameter1;
   const tire2 = (width2 * ratio2 * 2) / 25.4 / 100 + diameter2;
-  const difference = ((tire1 - tire2) / tire2) * 100;
+  let difference;
+  if (tire1 > tire2) {
+    difference = Math.abs(((tire1 - tire2) / tire2) * 100);
+  } else {
+    difference = Math.abs(((tire2 - tire1) / tire1) * 100);
+  }
 
   console.log(tire1);
+  console.log(tire2);
+  console.log(difference);
 
   document.getElementById("loading").style.display = "none";
   document.getElementById("results").style.display = "block";
