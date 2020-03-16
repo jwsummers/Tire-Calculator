@@ -1,4 +1,12 @@
-document.getElementById("calcButton").addEventListener("click", function(e) {
+/* document.getElementById("calcButton").addEventListener("submit", function(e) {
+  document.getElementById("loading").style.display = "block";
+  document.getElementById("results").style.display = "none";
+  document.getElementById("decision").style.display = "none";
+  setTimeout(calculateResults, 2000); 
+
+  e.preventDefault();
+}); */
+document.querySelector(".main-form").addEventListener("submit", function(e) {
   document.getElementById("loading").style.display = "block";
   document.getElementById("results").style.display = "none";
   document.getElementById("decision").style.display = "none";

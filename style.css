@@ -8,7 +8,7 @@
 }
 
 body {
-  background: url(img/background.jpg);
+  background-image: url(img/background.jpg);
 }
 
 .main-form {
@@ -121,6 +121,13 @@ body {
   display: block;
   padding: 1.5rem;
   font-size: 1.2rem;
+}
+
+.validate {
+  background-color: red;
+  color: white;
+  margin: 0.5rem;
+  padding: 0.3rem;
 }
 
 @media (max-width: 40rem) {

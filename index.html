@@ -8,85 +8,87 @@
     <title>Tire Calculator</title>
   </head>
   <body>
-    <form class="main-form" id="main-form">
-      <div class="main-header">
-        <h1 class="main-header__title">Tire Calculator</h1>
-        <p class="main-header__info">
-          Calculate the difference between two tire sizes.
-        </p>
-        <p class="example">e.g. 205 / 55 R 16</p>
-      </div>
-      <div class="tire-sizes">
-        <div class="tire">
-          <label class="text-label" for="tire-1">Current Tire Size: </label>
-          <div class="inputs">
-            <input
-              type="text"
-              id="width-1"
-              class="tire-size"
-              required
-              maxlength="4"
-            />
-            /
-            <input
-              type="text"
-              id="ratio-1"
-              class="tire-size"
-              required
-              maxlength="4"
-            />
-            R
-            <input
-              type="text"
-              id="diameter-1"
-              class="tire-size"
-              required
-              maxlength="4"
-            />
+    <div class="container">
+      <form class="main-form" id="main-form">
+        <div class="main-header">
+          <h1 class="main-header__title">Tire Calculator</h1>
+          <p class="main-header__info">
+            Calculate the difference between two tire sizes.
+          </p>
+          <p class="example">e.g. 205 / 55 R 16</p>
+        </div>
+        <div class="tire-sizes">
+          <div class="tire">
+            <label class="text-label" for="tire-1">Current Tire Size: </label>
+            <div class="inputs">
+              <input
+                type="text"
+                id="width-1"
+                class="tire-size"
+                maxlength="4"
+                required
+              />
+              /
+              <input
+                type="text"
+                id="ratio-1"
+                class="tire-size"
+                maxlength="4"
+                required
+              />
+              R
+              <input
+                type="text"
+                id="diameter-1"
+                class="tire-size"
+                maxlength="4"
+                required
+              />
+            </div>
+          </div>
+          <div class="tire">
+            <label class="text-label" for="tire-2">Original Tire Size: </label>
+            <div class="inputs">
+              <input
+                type="text"
+                id="width-2"
+                class="tire-size"
+                maxlength="4"
+                required
+              />
+              /
+              <input
+                type="text"
+                id="ratio-2"
+                class="tire-size"
+                maxlength="4"
+                required
+              />
+              R
+              <input
+                type="text"
+                id="diameter-2"
+                class="tire-size"
+                maxlength="4"
+                required
+              />
+            </div>
           </div>
         </div>
-        <div class="tire">
-          <label class="text-label" for="tire-2">Original Tire Size: </label>
-          <div class="inputs">
-            <input
-              type="text"
-              id="width-2"
-              class="tire-size"
-              required
-              maxlength="4"
-            />
-            /
-            <input
-              type="text"
-              id="ratio-2"
-              class="tire-size"
-              required
-              maxlength="4"
-            />
-            R
-            <input
-              type="text"
-              id="diameter-2"
-              class="tire-size"
-              required
-              maxlength="4"
-            />
-          </div>
+        <div class="button">
+          <button id="calcButton" class="btn" type="submit">
+            Calculate difference
+          </button>
         </div>
-      </div>
-      <div class="button">
-        <button id="calcButton" class="btn" type="submit">
-          Calculate difference
-        </button>
-      </div>
-      <div id="loading">
-        <img src="img/loading.gif" alt="" />
-      </div>
-      <div>
-        <p id="results">You have a <span id="result"></span> % difference.</p>
-      </div>
-      <div><p id="decision"></p></div>
-    </form>
+        <div id="loading">
+          <img src="img/loading.gif" alt="" />
+        </div>
+        <div>
+          <p id="results">You have a <span id="result"></span> % difference.</p>
+        </div>
+        <div><p id="decision"></p></div>
+      </form>
+    </div>
     <footer class="main-footer">
       <p>
         &copy Created by
