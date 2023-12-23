@@ -1,4 +1,4 @@
 # Tire-Calculator
-Calculates the difference between 2 tire sizes
+Calculates the difference between two tire sizes for a companies specific standards on wether they must be replaced.
 
-https://tire-calculator-98b584.netlify.com/
+[Tire Calculator](https://tire-calculator-98b584.netlify.com/)
