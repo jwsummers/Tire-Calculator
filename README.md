@@ -1,4 +1,4 @@
-# T.R.E.D (Tire Replacement Evaluation Decision) tool
+# T.R.E.D (Tire Replacement Evaluation Device)
 [Tire Calculator](https://tire-calculator-98b584.netlify.com/)
 ### Overview
 
