@@ -1,4 +1,4 @@
-# Tire-Calculator Web Application
+# T.R.E.D (Tire Replacement Evaluation Decision) tool
 [Tire Calculator](https://tire-calculator-98b584.netlify.com/)
 ### Overview
 
