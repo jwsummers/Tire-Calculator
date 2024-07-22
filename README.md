@@ -1,5 +1,5 @@
 # T.R.E.D (Tire Replacement Evaluation Device)
-[Tire Calculator](https://tire-calculator-98b584.netlify.com/)
+[Tire Calculator](https://tred.netlify.app/)
 ### Overview
 
 This web application is designed and implemented to enhance the efficiency and accuracy of the tire evaluation process for technicians at my company. Developed with a user-friendly interface, it provides a streamlined solution for comparing current and aftermarket tire sizes, ensuring compliance with company standards. The application aims to contribute significantly to improving overall operational effectiveness in the vehicle inspection process.
