@@ -3,59 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <title>T.R.E.D.</title>
-  </head>
-  <body>
-    <div class="container">
-        <form class="main-form" id="main-form">
-            <div class="main-header">
-                <h1 class="main-header__title">T.R.E.D.</h1>
-                <p class="main-header__info">Tire Replacement Evaluation Device</p>
-                <p class="example">e.g. 205 / 55 R 16</p>
-            </div>
-            <div class="tire">
-                <label class="text-label" for="tire-1">Current Tire Size:</label>
-                <div class="inputs">
-                    <input type="text" id="width-1" class="tire-size" maxlength="4" required placeholder="Width"/>
-                    /
-                    <input type="text" id="ratio-1" class="tire-size" maxlength="4" required placeholder="Ratio"/>
-                    R
-                    <input type="text" id="diameter-1" class="tire-size" maxlength="4" required placeholder="Diameter"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tire Replacement Evaluation Device</h1>
+    </header>
+
+    <main>
+        <section class="calculator">
+            <form id="tireForm">
+                <div class="form-group">
+                    <label for="width">Tire Width (mm):</label>
+                    <input type="number" id="width" name="width" required>
                 </div>
-            </div>
-            <div class="tire">
-                <label class="text-label" for="tire-2">Original Tire Size:</label>
-                <div class="inputs">
-                    <input type="text" id="width-2" class="tire-size" maxlength="4" required placeholder="Width"/>
-                    /
-                    <input type="text" id="ratio-2" class="tire-size" maxlength="4" required placeholder="Ratio"/>
-                    R
-                    <input type="text" id="diameter-2" class="tire-size" maxlength="4" required placeholder="Diameter"/>
+                <div class="form-group">
+                    <label for="aspectRatio">Aspect Ratio (%):</label>
+                    <input type="number" id="aspectRatio" name="aspectRatio" required>
                 </div>
-            </div>
-            <div class="btn-container">
-              <button id="calcButton" class="btn" type="submit">Calculate Difference</button>
-          </div>
-            <div id="loading">
-                <img src="img/loading.gif" alt="Loading..."/>
-            </div>
-            <p id="results">You have a <span id="result"></span>% difference.</p>
-            <p id="decision"></p>
-        </form>
-    </div>
-    <footer class="main-footer">
-      <p>
-        &copy Created by
-        <a
-          href="https://github.com/jwsummers/Tire-Calculator"
-          target="_blank"
-          class="footer-link"
-          >Jason Summers
-        </a>
-      </p>
-    </footer>
-    <script src="app.js"></script>
-  </body>
+                <div class="form-group">
+                    <label for="diameter">Wheel Diameter (inches):</label>
+                    <input type="number" id="diameter" name="diameter" required>
+                </div>
+                <button type="submit" class="calculate-btn">Calculate</button>
+            </form>
+        </section>
+
+        <section id="results" class="results">
+            <h2>Results</h2>
+            <div id="resultDetails"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
 </html>
